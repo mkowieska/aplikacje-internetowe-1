@@ -1,0 +1,79 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-image: url('C:/Users/martyna-pc/Desktop/aa/CS_year3/AI-1/lab/lab5E/natural2.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+
+header {
+    background-color: rgba(89, 125, 15);
+    color: white;
+    padding: 15px;
+    text-align: center; 
+}
+
+h1 {
+    font-size: 2.8em;
+    margin: 0;
+}
+
+h2 {
+    color: rgb(238,212,117);
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+p {
+    text-align: center;
+}
+section {
+    background-image: linear-gradient(45deg, rgba(89, 125, 15), rgba(89, 125, 15,0.2));
+}
+
+footer {
+    background-color: rgb(24,59,5);
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+ul {
+    list-style-type:disc;
+}
+
+a {
+    color: rgb(56, 129, 17);
+}
+a:hover {
+    color: rgb(109, 237, 41);
+}
+
+.destination-images {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 7px; 
+    margin-top: 7px; 
+    justify-content: center; 
+}
+.destination-images img {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    border-radius: 40%;
+}
+
+.review-images {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+    margin-top: 2px; 
+    justify-content: center; 
+}
+.review-images img {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+    border-radius: 30%;
+}

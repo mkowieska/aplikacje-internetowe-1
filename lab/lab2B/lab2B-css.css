@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('E:/projekty_git/Computer-Science/year3/AI-1/lab/lab2B/pictures/background.jpg');
+    margin: 0; /* usuwa domyślny margines wokół */
+    padding: 20px; /* odstęp */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto; /* centruje kontener w poziomie */
+    background: rgb(255, 255, 255);
+    padding: 20px;  
+    border-radius: 8px; /*zaokraglone rogi*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center; /* do srodka */
+    color: rgb(71, 53, 53);; 
+}
+
+.task-input {
+    display: flex; /* flexbox do ułożenia elementów w rzędzie */
+    justify-content: space-between; /* elementy równomiernie w obrębie kontenera */
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    padding: 10px;  
+    margin-right: 10px;     
+    border: 1px solid #ddd; /* obwódka wokół pól tekstowych. */
+    border-radius: 4px; 
+    flex-grow: 1; /* rozszerzanie się i wypełnianie dostępną przestrzeń. */
+}
+
+button {
+    padding: 10px;
+    background-color: #0bb159;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover { /* po najechaniu na przycisk zmniejsza przezroczystość. */
+    opacity: 0.8;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto; 
+    margin-top: 10px; 
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-item input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer; /* zmienia kursor na wskaźnik po najechaniu */
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.delete-task-btn {
+    background-color: rgb(184, 76, 40);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-bar {
+    width: 90%; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    background-color: #f8f8f8; 
+    color: #333; 
+    margin: 0 auto;
+    display: block;
+}
+
+.highlight {
+    background-color: rgb(255, 215, 55); /* podkreslenie */  
+    font-weight: bold; /* pogrubienie */     
+}
+
+#add-task-btn {
+    background-color: rgb(92, 118, 57);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 15px; 
+    border-radius: 5px;
+}
+
+.save-task-btn {
+    background-color: rgb(215, 117, 26);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,65 @@
+body {
+    font-family: Bahnschrift, sans-serif;
+    background-image: url('E:/projekty_git/Computer-Science/year3/AI-1/lab/lab3C/pictures/background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+}
+
+#mapContainer {
+    width: 300px; /* Stała szerokość kontenera */
+    height: 300px; /* Stała wysokość kontenera */
+    margin: 20px auto;
+    border: 2px solid #333; /* Opcjonalnie obramowanie */
+}
+#map {
+    width: 100%; /* Wypełnia kontener */
+    height: 100%; /* Wypełnia kontener */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    /*border: 2px dotted rgba(243, 210, 230);*/
+    /*background-color: rgba(249, 66, 139);*/
+    border: 2px dotted rgba(249, 66, 139);
+    background-color: rgb(255, 250, 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#puzzleContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#puzzleBoard {
+    width: 300px; /* Stała szerokość puzzli */
+    height: 300px; /* Stała wysokość puzzli */
+    border: 2px dashed rgba(175, 236, 1);
+    background-color: rgb(255, 250, 255);
+    position: relative;
+    margin: 20px auto;
+    display: inline-block;
+    color: white;
+}
+#puzzlePieces {
+    width: 300px; /* Dopasowane do puzzli */
+    height: 300px;
+    position: relative;
+    margin: 20px auto;
+    border: 2px dashed rgba(107, 95, 220);
+    background-color: rgb(255, 250, 255);
+}
+.puzzle-piece {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    cursor: grab;
+    border: 1px solid #333;
+    background-size: 300px 300px; /* Dopasowanie do rozmiaru mapy */
+}
+

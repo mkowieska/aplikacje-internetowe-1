@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<htm; lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AI1 Wykład1 - przykłady</title> <!-- nazwa strony -->
+        <!-- miejsce na style -->
+        <style type = "text/css"> 
+        /*Tło strony*/
+            body{
+                background-image: url("../ai1-uni-wyklad/tlo.jpeg");
+                background-repeat: repeat;
+            }
+            p.odd {
+                text-align: left; /*do lewej */
+            }
+            p.even {
+                text-align: right; /*do prawej */
+            }
+            p#firstParagraph {
+                font-style: italic;
+            }
+            div{
+                float:left;
+                width:100%
+            }
+            .header{ /*te wlasciwosci */
+                background-color:rgba(228, 68, 53, 0.938)
+            }
+            .sidebar{
+                background-color: rgb(228, 216, 73);
+            }
+            .main-content{
+                background-color: rgb(43, 226, 43);
+            }
+            @media (min-width:420px){ /* kiedy chcemy zmienic wielkosc */
+                .header{
+                    width:100%;
+                }
+                .sidebar{
+                    width:50%
+                }
+                .main-content{
+                    width: 40%;
+                }
+            }
+        </style> 
+         <link rel="stylesheet" type="text/css" href="style.css"> <!-- Zewnętrzne pliki CSS -->
+    </head>
+    <body> <!-- tresc na stronie -->
+        <div class="header"> <!-- Wyswietlanie tych wlasciwosci -->
+            <h1>Header</h1>
+        </div>
+        <div class="sidebar">
+            <h1>Sidebar</h1>
+        </div>
+        <div class="main-content">
+            <h1>Main-content</h1>
+        </div>
+        <table>
+            <tr>
+                <td colspan="2"><h1 style="text-align:center;">This is the header.</h1>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; vertical-align: top;">
+                    <p>This is left sidebar.</p>
+                    <p>This is left sidebar.</p>
+                </td>
+                <td style="vertical-align: top;">
+                    <p>Caramels pastry cupcake marshmallow topping sugar plum powder. Fruitcake apple pie cookie candy canes liquorice macaroon powder tiramisu. Sugar plum jujubes lollipop chupa chups biscuit. Bonbon gummi bears jelly-o cupcake lollipop cake.</p>
+                    <p>Danish biscuit topping cheesecake gummi bears pie sweet roll. Croissant tootsie roll pie muffin caramels. Muffin halvah jelly jelly beans ice cream fruitcake liquorice chupa chups.</p>
+                    <div>
+                        <p>Tiramisu cookie ice cream pie jujubes biscuit donut. Macaroon danish chocolate bar toffee gummi bears oat cake chupa chups marzipan ice cream. Fruitcake dessert toffee chocolate bar shortbread cake cheesecake pudding.</p>
+                        <p>Toffee jelly-o danish wafer chocolate cake macaroon apple pie marshmallow donut. Jujubes cookie croissant dragée macaroon jujubes gummi bears jujubes. Candy canes carrot cake caramels lollipop candy canes. Cake biscuit brownie sweet cake.</p>
+                    </div>
+                    <p>Sweet roll jelly-o croissant wafer macaroon chupa chups sweet. Brownie danish macaroon gummies tart bear claw pie sweet roll. Lollipop toffee cupcake candy cake carrot cake liquorice gingerbread. Jelly jelly-o sweet roll croissant pudding fruitcake croissant fruitcake.</p>
+            </tr>
+        </table>
+        <h1>Example</h1> <!-- sektor -->
+        <!-- akapit -->
+        <p class="odd" id="firstParagraph">This is some text in the first paragraph.</p><!-- zastosowanie od lewej z kursywa -->
+        <p class="even">This is some text in the second paragraph.</p> <!-- zastosowanie od prawej -->
+        <div style="background-color: rgba(128, 0, 128, 0.555);"> <!-- wstawianie blokow do strony i nadanie im koloru -->
+            <p>This is some text in the third paragraph.</p>
+            <b>  <!-- Pogrubienie -->
+                <p>Pogrubienie/Bold - This is some text in the fourth paragraph.</p>
+            </b>
+        </div>
+        <strong> <!-- Wytłuszczenie -->
+             <p>Wytłuszczenie/Strong - This is some text in the fifth paragraph.</p>
+        </strong>
+        <br>
+        <i> <!-- Kursywa -->
+            <p>Kursywa/Italic - This is some text in the fifth paragraph.</p><br><br>
+        </i>
+        <em> <!-- Wyróżnienie -->
+            <p>Wyróżnienie/Emphasised - This is some text in the sixth paragraph.</p>
+        </em>
+        <b><i>Bold Italic</i></b><br>
+
+        <h1>H1 level</h1> 
+        <h2>H2 level</h2> 
+        <h3>H3 level</h3> 
+        <h4>H4 level</h4> 
+        <h5>H5 level</h5> 
+        <h6>H6 level</h6>
+
+        <!--<p style=„text-decoration:underline;”>Podkreślenie</p>-->
+
+        &amp; <br> <!-- & -->
+        &gt; <!-- > -->
+        <br> &lt; <br> <!-- < -->
+        &copy; <br> <!-- © -->
+        &divide; <br> <!-- ÷ -->
+        &times; <br> <!-- × -->
+        &nbsp; <br> <!-- Odstęp (zakaz łamania linii)  -->
+        <br> <!-- łamanie linii  -->
+        &trade; <br> <!-- ™ -->
+        &euro; <br> <!-- € -->
+        &pound; <!-- £ -->
+
+        <!--
+        ▪ podkreślenie
+        text-decoration: underline;
+        ▪ wyrównanie:
+        text-align: center;
+        -->
+
+        <br>
+        <!--Zadanie-->
+        <p><b>Przedmiot:</b> Aplikacje Internetowe 1 <br>
+        <b>Skrót: </b>AI1 <br>
+        <b>Forma: </b>wykład <br>
+        &copy; 2024 Studenci WIZUT</p>
+
+        <img src="../ai1-uni-wyklad/szopik.jpg">
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "width: 350px;"> <!--Szerokosc obrazka-->
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "width: 50%;"> 
+        <img src="../ai1-uni-wyklad/szopik.jpg" style="height:250px;"> <!--Wysokosc obrazka-->
+        <br>
+        <!--Trzy obrazki obok siebie-->
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "width: 150px;">
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "width: 150px;">
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "width: 150px;">
+        <br>
+        <!--Dwa obrazki jeden pod drugim-->
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "width: 150px;">
+        <br>
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "width: 150px;">
+        <!--Wyśrodkowanie obrazka-->
+        <img src="../ai1-uni-wyklad/szopik.jpg" style="
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;">
+        <!--Odstępy--> <!--Ramki-->
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "padding: 10px; width: 40%; border: 5px dotted rgba(128, 0, 128);">
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "padding: 10px; width: 40%; border-radius: 50px; ">
+        <img src="../ai1-uni-wyklad/szopik.jpg" style= "padding-top: 10px; width: 40%; ">
+        <!--Przezroczystość-->
+        <img src="../ai1-uni-wyklad/szopik.jpg" style="width: 70%; opacity: 0.55">
+        <img src="../ai1-uni-wyklad/szopik.jpg" style="width: 70%; opacity: 0.9">
+        <!--Obrót obrazka-->
+        <img src="../ai1-uni-wyklad/szopik.jpg" style="
+            width: 80%;
+            display: block;
+            margin: 10% auto;
+            transform: rotate(9deg);
+            ">
+
+        <!--Łącza:
+        tworzenie ich:
+        <a href=„…” target=„_blank”>…</a>
+        <a href=„…”><h2>Why us?</h2></a>
+        <a href=„…”><img src=„…”></a>
+        - wewnątrz strony
+        <a name=„abc”></a>
+        <a href=„page.html#abc”>…</a>
+        - pocztowe <a href=„mailto:abc@def.com”>Contact</a>
+        -->
+        
+        <p>This is an ordered list:</p>
+        <ol><!--Ordered List 1. 2. 3. -->
+            <li>First item</li><!--Skład listy-->
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        <p>This is an unordered list:</p>
+        <ul><!--Unordered List . . . -->
+            <li>First item</li><!--Skład listy-->
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        <p>This is an list-style-type list:</p>
+        <!-- list-style-type List -->
+        <ul style="list-style-type: upper-roman;"><!-- I II III -->
+            <li>First item</li><!--Skład listy-->
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        <ul style="list-style-type: none;">
+            <li>First item</li><!--Skład listy-->
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        <ul style="list-style-type: square;"><!-- kwadraty -->
+            <li>First item</li><!--Skład listy-->
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        <ul style="list-style-type: circle;"><!--  o o o -->
+            <li>First item</li><!--Skład listy-->
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        <ul style="list-style-image:url(../ai1-uni-wyklad/miniszopik.jpg);">
+        <li>Square list style type</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        </ul>
+
+        <dl>
+            <!-- Definition List -->
+            <dt>warp</dt>
+            <!-- Definition Term -->
+            <dd>
+            <!-- Definition Description -->
+                A speed unit invented by Gene Rodenberry for the explanation of extra-speed travel in Star Trek series.
+                The speed of warp one is equal to the light speed. After warp one, the actual speed increases non-linearly.
+            </dd>
+            <dt>Klingon</dt>
+            <dd>A species in Star Trek series characterised by violence and great fighting skills.</dd>
+        </dl>
+
+        <ol>
+        <!-- Listy zagnieżdżone -->
+            <li>
+                Pierwszy
+                <ol>
+                    <li>Jeden</li>
+                    <li>One</li>
+                </ol>
+            </li>
+            <li>
+                Drugi
+                <ul>
+                    <li>Dwa</li>
+                    <li>Two</li>
+                </ul>
+            </li>
+            <li>Trzeci</li>
+        </ol>
+
+        <table> <!-- tworzenie tabeli -->
+            <tr> <!-- Wiersz tabeli -->
+                <th>Imie</th> <th>Nazwisko</th> <!-- Komórka nagłówka tabeli. -->
+            </tr>
+            <tr>
+                <td>Anna</td> <td>Kowalska</td> <!-- Komórka tabeli. -->
+            </tr>
+            <tr>
+                <td>Wiktor </td> <td>Malina</td>
+            </tr>
+        </table>
+        <!-- Obrazki w tabeli -->
+        <table style="width: 100%;"> 
+            <tr>
+                <td>
+                    <img src="../ai1-uni-wyklad/szopik.jpg" style="width: 30%">
+                </td> 
+                <td>Szop</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../ai1-uni-wyklad/szopik.jpg" style="width: 30%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../ai1-uni-wyklad/szopik.jpg" style="width: 30%">
+                </td>
+            </tr>
+        </table>
+        <!-- tworzenie tabeli -->
+        <table> 
+            <tr> 
+                <th>Produkt</th> <th>Skladniki</th> 
+            </tr>
+            <tr>
+                <td>Sok pomaranczowy</td> 
+                <td>
+                    <table>
+                        <tr>
+                            <td>Pomarancza </td> <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td>Woda </td> <td>70%</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!-- Wyśrodkowanie tabeli -->
+        <table style="margin: 0 auto;"> 
+            <tr> 
+                <th>Imie</th> <th>Nazwisko</th> 
+            </tr>
+            <tr>
+                <td>Anna</td> <td>Kowalska</td> 
+            </tr>
+            <tr>
+                <td>Wiktor </td> <td>Malina</td>
+            </tr>
+        </table>
+        <!-- Podpis tabeli -->
+        <table style="width: 80%" border="1">
+        <caption>Fig. 1: Example Table</caption>
+        <tr>
+            <td>A</td> <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td> <td>D</td>
+        </tr>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Header</td> <!-- nagłówek -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Body</td> <!--  główną treść -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer</td> <!-- stopka -->
+                </tr>
+            </tfoot>
+        </table>
+        <!-- Zarządzanie kolumnami -->
+        <table border="1">
+            <colgroup>
+                <col>
+                <col style="background-color: pink;">
+            </colgroup>
+            <tr>
+                <td>AAAA</td> <td>BBBB</td>
+            </tr>
+            <tr>
+                <td>CCCC</td> <td>DDDD</td>
+            </tr>
+        </table>
+        <!-- Łączenie komórek -->
+        
+
+        <!-- Pola tekstowe -->
+         <form>
+            Id:
+            <input type=„text” name=„username” maxlength=„11”>
+            Username:
+            <input type=„text” name=„username”><br>
+            Password:
+            <input type=password name=„userpass”>
+         </form>
+
+         <p>Textrea:</p>
+         <textarea>Caramels pastry cupcake marshmallow topping sugar plum powder. Fruitcake apple pie cookie candy canes liquorice macaroon powder tiramisu. Sugar plum jujubes lollipop chupa chups biscuit. Bonbon gummi bears jelly-o cupcake lollipop cake.
+         </textarea>
+
+        <!-- Przyciski jednokrotnego wyboru -->
+        <form>
+            <input type="radio" name="phoneOs" value="android" checked>Android<br>
+            <input type="radio" name="phoneOs" value="ios">iOS<br>
+            <input type="radio" name="phoneOs" value="windows">Windows<br>
+        </form>
+        
+        <!-- Przyciski wielokrotnego wyboru -->
+        <form>
+            <input type="checkbox" name="phoneOs" value="android" checked>Android<br>
+            <input type="checkbox" name="phoneOs" value="ios">iOS<br>
+            <input type="checkbox" name="phoneOs" value="windows" checked>Windows<br>
+        </form>
+
+        <!-- Listy rozwijane -->
+        <form>
+            <select name="phoneOs">
+                <option value="android" selected>Android</option>
+                <option value="ios">iOS</option>
+                <option value="windows">Windows</option>
+            </select>
+        </form>
+
+        <!-- Reset formularza -->
+        <input type=„reset” value=„Clear form”>
+
+        <!-- Własne przyciski -->
+        <form>
+            <button>
+                <img src="../ai1-uni-wyklad/miniszopik.jpg">
+                Send!
+            </button>
+        </form>
+
+        <!-- Etykiety -->
+        <form>
+            <label><input type="radio" name="phoneOs" value="android" checked>Android</label><br>
+            <label><input type="radio" name="phoneOs" value="ios">iOS</label><br>
+            <label><input type="radio" name="phoneOs" value="windows">Windows</label><br>
+        </form>
+
+        <!-- Wysyłka formularza na e-mail -->
+        <form action=„mailto:user@example.com” method=„post”></form>
+
+        <!-- Pola ukryte -->
+        <input type=„hidden” name=„myField” value=„42”>
+
+        <!-- Przesyłanie plików -->
+        <form enctype="multipart/form-data">
+            <input type="file" name="avatar">
+        </form>
+
+        <!-- Grupowanie pól formularza -->
+        <form>
+            <fieldset>
+            <legend>User</legend>
+            <input type="text" name="firstName"><br>
+            <input type="text" name="lastName">
+            </fieldset>
+            <fieldset>
+            <legend>Details</legend>
+            <input type="text" name="dateOfBirth">
+            </fieldset>
+        </form>
+
+    </body>
+</htm> 

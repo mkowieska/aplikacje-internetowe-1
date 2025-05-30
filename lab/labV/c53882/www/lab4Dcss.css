@@ -1,0 +1,43 @@
+body {
+    font-family: 'Grotesque Light', serif;
+    background-image: url('background.png');
+    /*background-image: url('images/background.jpg');*/
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    text-align: center;
+} 
+input[type="text"],
+input[type="datetime-local"] {
+    padding: 10px;  
+    margin-right: 10px;     
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    flex-grow: 1; /* rozszerzanie się i wypełnianie dostępną przestrzeń. */
+}
+button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+#current-weather-container {
+    margin-top: 40px;
+}
+
+#forecast-container{
+    margin-top: 30px;
+    border: 2px dotted rgba(169, 150, 196); 
+}
+
+.forecast {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
