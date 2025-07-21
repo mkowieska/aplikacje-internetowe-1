@@ -1,6 +1,6 @@
 body {
     font-family: 'Garamond', serif;
-    background-image: url('E:/projekty_git/Computer-Science/year3/AI-1/lab/lab1A/pictures/pexels-tlo3-p2.jpg');
+    background-image: url('lab1A/pictures/pexels-tlo3-p2.jpg');
     background-size: cover; 
     background-position: center;
 }
@@ -57,7 +57,7 @@ section {
     border-radius: 10px; 
     margin-bottom: 20px; 
 
-    background-image: url('E:/projekty_git/Computer-Science/year3/AI-1/lab/lab1A/pictures/pexels-tlo3-p2.jpg');
+    background-image: url('lab1A/pictures//pexels-tlo3-p2.jpg');
     background-size: cover; 
     background-position: center;
     background-color: rgba(255, 255, 255, 0.7); 
